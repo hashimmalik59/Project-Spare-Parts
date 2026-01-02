@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 
 <head>
     <meta charset="UTF-8">
@@ -12,110 +12,89 @@
 <body>
     <!-- Floating Button -->
     <div class="fixed bottom-10 left-145 z-50 w-full text-gray-100 text-3xl flex flex-col gap-3 p-2">
-        <a href="https://wa.me/923189169189"
-            class="bg-[#E63946] h-[45px] w-[45px] flex justify-center items-center rounded-full"><i
+        <a href="https://wa.me/923189169189" class="hover:scale-105 transition-transform duration-300 active:scale-95
+ bg-[#E63946] h-[45px] w-[45px] flex justify-center items-center rounded-full"><i
                 class="fa-brands fa-whatsapp"></i></a>
-        <a href="mailto:hm3630450@gmail.com"
-            class="bg-[#1C3352] h-[45px] w-[45px] flex justify-center items-center rounded-full"><i
+        <a href="mailto:hm3630450@gmail.com" class="hover:scale-105 transition-transform duration-300 active:scale-95
+ bg-[#1C3352] h-[45px] w-[45px] flex justify-center items-center rounded-full"><i
                 class="fa-regular fa-envelope"></i></a>
     </div>
-
     <!-- Header -->
-    <header id="home"
-        class="fixed top-0 left-0 z-40 w-full h-20 flex justify-between items-center border-b-4 border-[#E63946] bg-gray-100 px-4">
+    <header id="home" class="
+ fixed top-0 left-0 z-40 w-full h-20 flex justify-between items-center border-b-4 border-[#E63946] bg-gray-100 px-4">
         <a href="#home"><img src="./Assests/logo.png" width="80" alt="Logo"></a>
-        <nav class="hidden">
+        <nav class="hidden animate-[slideDown_0.3s_ease-out]">
             <ul class="flex space-x-6">
                 <li>Home</li>
                 <li>Catalog</li>
                 <li>Contact</li>
             </ul>
         </nav>
-
         <i id="menuBtn" class="fas fa-bars text-[#E63946] text-2xl cursor-pointer"></i>
     </header>
     <!-- Mobile Menu -->
     <nav id="mobileMenu"
-        class="fixed top-20 left-0 w-full bg-gray-100 border-b-4 border-[#E63946] hidden z-40 md:hidden">
+        class="fixed top-20 left-0 w-full flex justify-center bg-gray-100 border-b-4 border-[#E63946] hidden z-40 md:hidden">
         <ul class="flex flex-col items-center gap-6 py-6 text-[#1C3352] text-xl font-semibold">
             <a href="#home">
-                <li>Home</li>
+                <li class="inline-block border-b-2 border-[#E63946]">Home</li>
             </a>
             <a href="#catalog">
-                <li>Catalog</li>
+                <li class="inline-block border-b-2 border-[#E63946]">Catalog</li>
             </a>
             <a href="#contact">
-                <li>Contact</li>
+                <li class="inline-block border-b-2 border-[#E63946]">Contact</li>
             </a>
         </ul>
     </nav>
-
-
     <!-- Spacer to prevent content hiding behind header -->
     <div class="h-20"></div>
 
+    <!-- Hero Section -->
+    <section class="relative flex flex-col items-center justify-center text-center h-screen px-5 py-10
+  bg-cover bg-center bg-no-repeat" style="background-image: url('./Assests/Spare-parts.jpg');">
+        <!-- Dim Overlay for better text visibility -->
+        <div class="absolute inset-0 bg-[#1C3352]/90"></div>
 
-    <!-- Hero -->
-    <section class="flex flex-col items-center gap-10 bg-[#1C3352] text-center h-330 px-5 py-10">
-        <h1 class="text-[#E63946] font-bold text-3xl">You Deamnd, <br> We Provide</h1>
-        <div>
-            <h1 class="text-gray-100 font-bold text-4xl">Premuim Quality Auto Part</h1>
-            <p class="text-[#E63946] font-bold text-2xl">Delivered Wolrdwide <br> with Trust & Reliability
+        <!-- Hero Content -->
+        <div class="relative z-10 flex flex-col items-center gap-6 max-w-4xl">
+            <h1 class="text-[#E63946] font-bold text-5xl text-shadow-lg">You Demand, <br> We Provide</h1>
+            <h2 class="text-white font-bold text-4xl text-shadow-lg">Premium Quality Auto Parts</h2>
+            <p class="text-[#E63946] font-semibold text-2xl text-shadow-lg">Delivered Worldwide with Trust & Reliability
             </p>
-        </div>
 
-        <p class="text-gray-100 text-2xl">Qazi Auto Parts is your trusted supplier of high-quality auto
-            components from
-            China. We provide motorcycle
-            parts, car spare parts, industrial machinery parts, and factory equipment parts | exactly according to
-            customer demand | with competitive pricing, premuim quality, and fast global delivery.</p>
-        <a href="https://wa.me/923189169189">
-            <button class="hover:bg-red-500 flex gap-2 bg-[#E63946] text-gray-100 rounded px-5 py-3 font-semibold"><i
-                    class="fa-brands fa-whatsapp text-2xl"></i>
-                Whatsapp</button>
-        </a>
-        <hr>
+            <p class="text-white text-xl text-center mt-4">
+                Qazi Auto Parts is your trusted supplier of high-quality auto components from China. We provide
+                motorcycle
+                parts, car spare parts, industrial machinery parts, and factory equipment parts exactly according to
+                customer demand.
+            </p>
 
-        <h1 class="text-gray-100 text-4xl font-bold">Our Consumers</h1>
-        <div class="text-[#1C3352] font-bold flex justify-center flex-wrap gap-4">
-            <div class="flex flex-col items-center gap-3 bg-gray-100 h-25 w-20 p-4 rounded">
-                <img src="./Assests/China.png" alt="" width="40px">
-                <span>China</span>
-            </div>
-            <div class="flex flex-col items-center gap-3 bg-gray-100 h-25 w-20 p-4 rounded">
-                <img src="./Assests/Japan.png" alt="" width="40px">
-                <span>Japan</span>
-            </div>
-            <div class="flex flex-col items-center gap-3 bg-gray-100 h-25 w-20 p-4 rounded">
-                <img src="./Assests/Korea.png" alt="" width="40px">
-                <span>Korea</span>
-            </div>
-            <div class="flex flex-col items-center gap-3 bg-gray-100 h-25 w-20 p-4 rounded">
-                <img src="./Assests/Germany.png" alt="" width="40px">
-                <span>Germany</span>
-            </div>
-            <div class="flex flex-col items-center gap-3 bg-gray-100 h-25 w-20 p-4 rounded">
-                <img src="./Assests/USA.png" alt="" width="40px">
-                <span>USA</span>
-            </div>
-            <div class="flex flex-col items-center gap-3 bg-gray-100 h-25 w-20 p-4 rounded">
-                <img src="./Assests/World.png" alt="" width="40px">
-                <span>World</span>
-            </div>
+            <a href="https://wa.me/923189169189">
+                <button
+                    class="mt-6 hover:bg-red-500 flex gap-2 bg-[#E63946] text-white rounded px-8 py-4 text-2xl font-semibold transition-transform duration-300 hover:scale-105">
+                    <i class="fa-brands fa-whatsapp text-3xl"></i> Whatsapp
+                </button>
+            </a>
         </div>
     </section>
-    <section class="px-2 bg-gray-100 flex flex-col gap-10 items-center h-400 py-10">
+
+    <section class="px-2 bg-gray-100 flex flex-col gap-10 items-center h-350 py-10">
         <h1 class="text-4xl font-bold text-[#1C3352] border-b-4 border-[#E63946] inline-block py-2">About</h1>
         <h1 class="text-3xl text-[#1C3352] font-bold text-center">Your Professional Supplier <span
                 class="text-[#E63946]">China</span></h1>
-        <p class="text-[#1C3352] text-2xl text-center"><span class="text-[#E63946] font-semibold">Qazi Auto Parts</span>
+        <p
+            class="flex flex-col gap-5 py-10 px-5 text-[#1C3352] text-lg text-justify bg-[#1C3352] w-screen text-gray-100">
+            <span class="text-[#E63946] font-bold text-3xl text-center">Qazi Auto
+                Parts</span>
             is a
             professional
             sourcing and supply
             company based in
             Yiwu,
             China. We specialize in high-quality spare parts for motorcycles, cars, heavy vehicles, and industrial
-            machinery.</p>
+            machinery.
+        </p>
         <p class="text-[#1C3352] text-center text-2xl">
             With string international sourcing power and reliable manufactures, and ensure best quality andc trusted
             long-tern business relations with our clients worldwide.
@@ -127,111 +106,116 @@
         <p class="text-[#E63946] text-center text-2xl font-bold">If the client needs it - we source it and deliver it.
         </p>
         <div
-            class="flex flex-col justify-center items-center gap-5 text-gray-100 bg-[#1C3352] h-80 w-70 rounded-lg border-3 border-[#E63946]">
+            class="flex flex-col justify-center items-center gap-2 text-gray-100 bg-[#1C3352] h-90 w-70 rounded-lg border-3 border-[#E63946]">
             <i class="fas fa-warehouse text-7xl mb-6"></i>
             <p class="text-3xl text-center font-semibold">Our International Warehouse</p>
         </div>
     </section>
-    <section id="catalog" class="py-10 bg-white flex flex-col items-center gap-10">
-        <h1 class="text-4xl font-bold text-[#1C3352] inline-block border-b-4 border-[#E63946] py-2 text-center">Catalog
+    <!-- Catalog Section -->
+    <section id="catalog" class="py-16 bg-gray-100 flex flex-col items-center gap-12">
+        <h1 class="text-4xl font-bold text-[#1C3352] border-b-4 border-[#E63946] inline-block py-2 text-center">
+            Catalog
         </h1>
-        <div class="flex flex-col border-2 border-[#1C3352] rounded-lg gap-3 bg-gray-100 items-center py-3 w-70">
-            <i class="fas fa-car text-[#E63946] text-5xl"></i>
-            <h1 class="text-[#1C3352] text-3xl font-semibold">Car Spare Parts</h1>
-            <ul class="text-[1.2rem] text-[#1C3352]  list-disc">
-                <li>Engine Parts</li>
-                <li>Suspensions & Steering</li>
-                <li>Body & Exterior Parts</li>
-                <li>Electrical & Sensors</li>
-                <li>Filters & Accessories</li>
-            </ul>
-        </div>
-        <div class="flex flex-col border-2 border-[#1C3352] rounded-lg gap-3 bg-gray-100 items-center py-3 w-70">
-            <i class="fas fa-motorcycle text-[#E63946] text-5xl"></i>
-            <h1 class="text-[#1C3352] text-3xl font-semibold">Motorcycle Parts</h1>
-            <ul class="text-[1.2rem] text-[#1C3352]  list-disc">
-                <li>Engine Parts</li>
-                <li>Suspensions & Steering</li>
-                <li>Body & Exterior Parts</li>
-                <li>Electrical & Sensors</li>
-                <li>Filters & Accessories</li>
-            </ul>
-        </div>
-        <div class="flex flex-col border-2 border-[#1C3352] rounded-lg gap-3 bg-gray-100 items-center py-3 w-70">
-            <i class="fas fa-industry text-[#E63946] text-5xl"></i>
-            <h1 class="text-[#1C3352] text-3xl font-semibold text-center">Industry & Machinery Parts</h1>
-            <ul class="text-[1.2rem] text-[#1C3352]  list-disc">
-                <li>Engine Parts</li>
-                <li>Suspensions & Steering</li>
-                <li>Body & Exterior Parts</li>
-                <li>Electrical & Sensors</li>
-                <li>Filters & Accessories</li>
-            </ul>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 w-full max-w-6xl">
+            <!-- Car Spare Parts -->
+            <div
+                class="bg-white rounded-xl shadow-lg hover:shadow-2xl transition-shadow duration-300 p-6 flex flex-col items-center text-center">
+                <i class="fas fa-car text-[#E63946] text-6xl mb-4"></i>
+                <h2 class="text-[#1C3352] font-bold text-2xl mb-3">Car Spare Parts</h2>
+                <ul class="text-gray-600 list-disc list-inside text-left">
+                    <li>Engine Parts</li>
+                    <li>Suspensions & Steering</li>
+                    <li>Body & Exterior Parts</li>
+                    <li>Electrical & Sensors</li>
+                    <li>Filters & Accessories</li>
+                </ul>
+            </div>
+
+            <!-- Motorcycle Parts -->
+            <div
+                class="bg-white rounded-xl shadow-lg hover:shadow-2xl transition-shadow duration-300 p-6 flex flex-col items-center text-center">
+                <i class="fas fa-motorcycle text-[#E63946] text-6xl mb-4"></i>
+                <h2 class="text-[#1C3352] font-bold text-2xl mb-3">Motorcycle Parts</h2>
+                <ul class="text-gray-600 list-disc list-inside text-left">
+                    <li>Engine Parts</li>
+                    <li>Suspensions & Steering</li>
+                    <li>Body & Exterior Parts</li>
+                    <li>Electrical & Sensors</li>
+                    <li>Filters & Accessories</li>
+                </ul>
+            </div>
+
+            <!-- Industry & Machinery -->
+            <div
+                class="bg-white rounded-xl shadow-lg hover:shadow-2xl transition-shadow duration-300 p-6 flex flex-col items-center text-center">
+                <i class="fas fa-industry text-[#E63946] text-6xl mb-4"></i>
+                <h2 class="text-[#1C3352] font-bold text-2xl mb-3">Industry & Machinery Parts</h2>
+                <ul class="text-gray-600 list-disc list-inside text-left">
+                    <li>Engine Parts</li>
+                    <li>Suspensions & Steering</li>
+                    <li>Body & Exterior Parts</li>
+                    <li>Electrical & Sensors</li>
+                    <li>Filters & Accessories</li>
+                </ul>
+            </div>
         </div>
     </section>
-    <!-- Catalog -->
-    <section class="h-550 bg-gray-100 py-10 flex flex-col items-center gap-10">
-        <div class="bg-[#1C3352] text-gray-100 flex flex-col items-center justify-center gap-5 py-10">
-            <h1 class="text-4xl font-bold">Product Catalog</h1>
-            <p class="text-center text-2xl">Explore our wide range of premium auto parts and machiney components.</p>
+
+    <!-- Product Catalog Section -->
+    <section class="py-16 bg-white flex flex-col items-center">
+        <div class="text-center mb-12">
+            <h1 class="text-4xl font-bold text-[#1C3352] border-b-4 border-[#E63946] inline-block py-2">Product Catalog
+            </h1>
+            <p class="text-gray-600 mt-4 max-w-2xl px-10 text-justify">Explore our wide range of premium auto parts and
+                machinery
+                components sourced from reliable manufacturers worldwide.</p>
         </div>
-        <p class="text-2xl text-justify py-5 px-4">Browser through our extensive catalaog of high quality auto parts.
-            Each
-            product
-            is sourced
-            from reliable
-            manufactures and tested for quality assurance.</p>
-        <div class="flex flex-col items-center w-70 h-70 border-4 border-[#1C3352] rounded">
-            <div class="bg-[#1C3352] h-30 w-full text-gray-100 text-6xl flex justify-center items-center"><i
-                    class="fas fa-cog"></i>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 w-full max-w-6xl ">
+            <!-- Engine Components -->
+            <div
+                class="bg-[#1C3352] text-gray-100 rounded-xl shadow-lg hover:scale-105 transform transition duration-300 p-6 flex flex-col mx-5">
+                <div class="text-6xl flex justify-center mb-4"><i class="fas fa-cog"></i></div>
+                <h2 class="font-bold text-2xl mb-2 text-center">Engine Components</h2>
+                <p class="text-gray-300 text-justify">Complete range of engine parts including pistons, crankshafts,
+                    camshafts, valves, and gaskets for cars and motorcycles.</p>
             </div>
-            <div class="flex flex-col gap-1 p-3">
-                <h1 class="font-bold text-[#1C3352] text-2xl">Engine Components</h1>
-                <p class="text-justify">Complete range of engine parts including pistons, crankshafts, camshafts,
-                    valves, and
-                    gaskets for card
-                    and motorcycles.</p>
+
+            <!-- Brake Systems -->
+            <div
+                class="bg-[#1C3352] text-gray-100 rounded-xl shadow-lg hover:scale-105 transform transition duration-300 p-6 flex flex-col mx-5">
+                <div class="text-6xl flex justify-center mb-4"><i class="fas fa-cog"></i></div>
+                <h2 class="font-bold text-2xl mb-2 text-center">Brake Systems</h2>
+                <p class="text-gray-300 text-justify">High-performance brake pads, discs, calipers, and master cylinders
+                    for all vehicle types.</p>
             </div>
-        </div>
-        <div class="flex flex-col items-center w-70 h-70 border-4 border-[#1C3352] rounded">
-            <div class="bg-[#1C3352] h-30 w-full text-gray-100 text-6xl flex justify-center items-center"><i
-                    class="fas fa-cog"></i>
+
+            <!-- Electrical Parts -->
+            <div
+                class="bg-[#1C3352] text-gray-100 rounded-xl shadow-lg hover:scale-105 transform transition duration-300 p-6 flex flex-col mx-5">
+                <div class="text-6xl flex justify-center mb-4"><i class="fas fa-cog"></i></div>
+                <h2 class="font-bold text-2xl mb-2 text-center">Electrical Parts</h2>
+                <p class="text-gray-300 text-justify">Batteries, alternators, starters, sensors, wiring harnesses, and
+                    lightning components.</p>
             </div>
-            <div class="flex flex-col gap-1 p-3">
-                <h1 class="font-bold text-[#1C3352] text-2xl">Break Systems</h1>
-                <p class="text-justify">High-performance brake apds, discs, calipers, and master cylinders, for all
-                    vehicle types.</p>
+
+            <!-- Suspensions Parts -->
+            <div
+                class="bg-[#1C3352] text-gray-100 rounded-xl shadow-lg hover:scale-105 transform transition duration-300 p-6 flex flex-col mx-5">
+                <div class="text-6xl flex justify-center mb-4"><i class="fas fa-cog"></i></div>
+                <h2 class="font-bold text-2xl mb-2 text-center">Suspensions Parts</h2>
+                <p class="text-gray-300 text-justify">Shocks, absorbers, struts, control arms, ball joints, and springs
+                    for smooth rides.</p>
             </div>
-        </div>
-        </div>
-        <div class="flex flex-col items-center w-70 h-70 border-4 border-[#1C3352] rounded">
-            <div class="bg-[#1C3352] h-30 w-full text-gray-100 text-6xl flex justify-center items-center"><i
-                    class="fas fa-cog"></i>
-            </div>
-            <div class="flex flex-col gap-1 p-3">
-                <h1 class="font-bold text-[#1C3352] text-2xl">Electrical Parts</h1>
-                <p class="text-justify">Batteries, alternators, starters, sensors, wiring harenesses, and lightning
-                    components.</p>
-            </div>
-        </div>
-        <div class="flex flex-col items-center w-70 h-70 border-4 border-[#1C3352] rounded">
-            <div class="bg-[#1C3352] h-30 w-full text-gray-100 text-6xl flex justify-center items-center"><i
-                    class="fas fa-cog"></i>
-            </div>
-            <div class="flex flex-col gap-1 p-3">
-                <h1 class="font-bold text-[#1C3352] text-2xl">Suspensions Parts</h1>
-                <p class="text-justify">Shocks absorbers, structs, control arms, ball joints, and springs for smooth
-                    rides.</p>
-            </div>
-        </div>
-        <div class="flex flex-col items-center w-70 h-70 border-4 border-[#1C3352] rounded ">
-            <div class="bg-[#1C3352] h-30 w-full text-gray-100 text-6xl flex justify-center items-center"><i
-                    class="fas fa-cog"></i>
-            </div>
-            <div class="flex flex-col gap-1 p-3">
-                <h1 class="font-bold text-[#1C3352] text-2xl">Filters & Fluids </h1>
-                <p class="text-justify">Oil filters, air filters, fuel filters, and high-quality lubricants for optimal
-                    performance.</p>
+
+            <!-- Filters & Fluids -->
+            <div
+                class="bg-[#1C3352] text-gray-100 rounded-xl shadow-lg hover:scale-105 transform transition duration-300 p-6 flex flex-col mx-5">
+                <div class="text-6xl flex justify-center mb-4"><i class="fas fa-cog"></i></div>
+                <h2 class="font-bold text-2xl mb-2 text-center">Filters & Fluids</h2>
+                <p class="text-gray-300 text-justify">Oil filters, air filters, fuel filters, and high-quality
+                    lubricants for optimal performance.</p>
             </div>
         </div>
     </section>
@@ -270,9 +254,12 @@
         <h1 class="text-[#E63946] font-bold text-2xl">Contact Info</h1>
         <hr>
         <div class="text-gray-100 flex flex-col gap-3">
-            <span><i class="fas fa-phone-alt"></i> +861518939407</span>
-            <span><i class="far fa-envelope"></i> qaziautoparts390@gmail.com</span>
-            <span><i class="fas fa-map-marker-alt"></i> Yiwu International Trade City, China</span>
+            <span class="flex items-center gap-2"><i class="text-[#E63946] fas fa-phone-alt"></i>+861518939407</span>
+            <span class="flex items-center gap-2"><i
+                    class="text-[#E63946] far fa-envelope"></i>qaziautoparts390@gmail.com</span>
+            <span class="flex items-center gap-2"><i class="text-[#E63946] fas fa-map-marker-alt"></i>Yiwu International
+                Trade City,
+                China</span>
         </div>
         <br>
         <hr>
